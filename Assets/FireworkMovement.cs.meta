@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 77cb87df58c54433a96b99ae3dd3a6c1
+timeCreated: 1449985404
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - frog: {instanceID: 0}
+  - fireworkBlastPrefab: {fileID: 11456478, guid: 35879296ecfd7448d87b8a8427c57495,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
