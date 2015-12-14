@@ -3,21 +3,23 @@ using System.Collections;
 
 public class Frog : MonoBehaviour {
 	public FireworkMovement fireworkPrefab;
+	public BirdMovement birdPrefab;
 	FireworkMovement currentFirework;
+	public int frogBabiesRescued;
 
 	// Use this for initialization
 	void Start () {
 		CreateFirework ();
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown ("space")) {
-			Debug.Log ("shooting firework");
+		if (Input.GetKeyDown ("x")) {
 			if (currentFirework.launched) {
 				ExplodeFirework ();
 			} else {
-				LaunchFirework ();
+				currentFirework.Launch ();
 			}
 		}
 	}
@@ -28,10 +30,6 @@ public class Frog : MonoBehaviour {
 
 	void ExplodeFirework () {
 		currentFirework.Explode ();
-	}
-
-	void LaunchFirework () {
-		currentFirework.Launch ();
 	}
 
 	void CreateFirework() {
